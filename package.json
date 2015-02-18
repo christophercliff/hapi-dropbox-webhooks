@@ -1,6 +1,6 @@
 {
   "name": "hapi-dropbox-webhooks",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Hapi plugin for receiving requests from the Dropbox webhooks API.",
   "keywords": [
     "hapi",
