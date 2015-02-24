@@ -99,4 +99,15 @@ describe('the plugin', function () {
         }, done)
     })
 
+    it('should ID the routes', function () {
+        server.lookup('dropbox-webhooks-get').should.have.properties({
+            method: 'get',
+            path: PATHNAME,
+        })
+        server.lookup('dropbox-webhooks-post').should.have.properties({
+            method: 'post',
+            path: PATHNAME,
+        })
+    })
+
 })
